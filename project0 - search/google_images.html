@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+            body {
+                font-family: arial, sans-serif;
+                color: #202124;
+                font-size: 14px;
+            }
+            .center {
+                text-align: center;
+            }
+            .right {
+                text-align: right;
+            }
+            .link {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 13px;
+                font-weight: 400;
+            }
+            .text-input {
+                min-height: 44px;
+                width: 638px;
+                max-width: 584px;
+                border: 1px solid #dfe1e5;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .search-input:focus {
+                outline: none;
+            }
+            .search-input:hover {
+                box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            }
+            .btn-form {
+                background-color: #f8f9fa;
+                border-radius: 4px;
+                padding: 0 16px;
+                height: 36px;
+                border: 1px solid #f8f9fa;
+                color: #3c4043;
+                margin: 11px 4px;
+            }
+            .btn-form:hover,.btn-form:focus {
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124;
+            }
+            .images {
+                color: #4285f4;
+                font: 16px/16px roboto-regular, arial, sans-serif;
+                position: absolute;
+                left: 215px;
+                bottom: 0;
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="right m-2">
+            <a class="link mx-1" href="advanced.html">Advanced Search</a>
+            <a class="link mx-1" href="index.html">Google</a>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <div class="center position-relative">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
+                <span class="images">images</span>
+            </div>
+        </div>
+        <div class="center">
+            <form id="form" action="https://google.com/search">
+                <div class="my-4 d-flex justify-content-center">
+                    <div class="d-flex align-content-center" style="position: relative;">
+                        <div class="position-absolute" style="left: 2%; top: 25%;">
+                            <div style="width:20px;fill: currentColor;color:#9aa0a6;">
+                                <span style="height:20px !important;line-height:20px;width:20px !important; display: inline-block; position: relative;">
+                                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="text-input rounded-pill search-input" style="padding-left: 2rem;padding-right: 2rem;" type="text" name="q">
+                        </div>
+                        <div id="tophf">
+                            <input name="hl" value="en" type="hidden">
+                            <input name="tbm" value="isch" type="hidden">
+                            <input name="source" type="hidden" value="hp">
+                            <input name="biw" type="hidden">
+                            <input name="bih" type="hidden">
+                            <input value="JTycZNH6OqukkdUP-ZyGoAI" name="ei" type="hidden">
+                            <input value="AOEireoAAAAAZJxKNSw4IAUVv3qOa5ajK9kkiI4C1RfT" name="iflsig" type="hidden">
+                        </div>
+                        <style data-iml="1687947380285">.nDcEnd{cursor:pointer;align-items:center;border:0;background:transparent;outline:none;padding:0 8px;width:24px;line-height:44px}.Gdd5U{height:24px;width:24px;vertical-align:middle}.minidiv .nDcEnd{line-height:32px}.minidiv .Gdd5U{width:20px;height:20px}</style>
+                        <div style="right: 10%; top: -5%;" jscontroller="lpsUAf" jsname="R5mgy" class="nDcEnd position-absolute" data-base-lens-url="https://lens.google.com" data-checkerboard-transparent-images-background-enabled="false" data-convert-transparent-images="true" data-dialog-open-contained-to-img-enabled="true" data-downscaling-enabled="true" data-downscaling-max-longest-edge-pixels="1000" data-encoding-compression-ratio="0.4" data-file-format-conversion-enabled="true" data-image-processor-enabled="true" data-is-images-mode="false" data-is-send-dimensions-in-body-enabled="false" data-preferred-mime-type="image/jpeg" data-propagated-experiment-ids="72276982,72289742," data-transparent-image-background-color="#fff" data-transparent-image-checkerboard-color="#fff" data-upload-path="https://lens.google.com/v3/upload?ssb=1&amp;cpe=1&amp;ifg204=1&amp;" aria-label="Search by image" role="button" tabindex="0" jsaction="rcuQ6b:npT2md;h5M12e" data-ved="0ahUKEwiJ0sb_3eX_AhVgXvEDHTWjDIAQhqEICAc"><a href="https://google.com/"><svg class="Gdd5U" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="192" width="192"></rect><g><circle fill="#34a853" cx="144.07" cy="144" r="16"></circle><circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle><path fill="#ea4335" d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path><path fill="#fbbc05" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"></path><path fill="#4285f4" d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path></g></svg></a>
+                        </div>
+                        <button jsname="Tg7LZd" class="position-absolute" style="background: none;border: none; right: 2%; top: 20%; fill: currentColor;" aria-label="Google Search" type="submit" data-ved="0ahUKEwiRoammj-b_AhUrUqQEHXmOASQQ4dUDCAc"> <div style="color:#4285f4;width: 24px; height: 24px;background-color: none;"> <span class="z1asCe MZy1Rb"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-iml="1687961154266"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span> </div> </button>            
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
