@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block body %}
+	<a href="{% url 'edit_entry' title %}">edit this entry</a>
 	{% if entry %}
 		{{ entry|safe }}
 	{% else %}

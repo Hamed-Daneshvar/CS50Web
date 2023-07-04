@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create new entry
+{% endblock %}
+
+{% block body %}
+	<a href="https://guides.github.com/features/mastering-markdown/">Markdown guides</a>
+	{% for message in messages %}
+	<script>alert("{{ message }}");</script>
+	{% endfor %}
+	<form method="post">
+		{% csrf_token %}
+		{{ form }}
+		<div>
+			<input type="submit" value="Save" class="btn btn-primary">
+		</div>
+	</form>
+{% endblock %}
